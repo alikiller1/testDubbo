@@ -29,6 +29,6 @@
 	
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="per.liuqh.testdubbo.DemoService"
-		ref="demoService" timeout="2000" />
+		ref="demoService"  timeout="10000"/>
 
 </beans>  

@@ -20,6 +20,6 @@
 	<dubbo:registry protocol="zookeeper"  address="${zookeeper_server}" />
 
 	<!-- 生成远程服务代理，可以像使用本地bean一样使用demoService -->
-	<dubbo:reference id="demoService" interface="per.liuqh.testdubbo.DemoService" />
+	<dubbo:reference id="demoService" interface="per.liuqh.testdubbo.DemoService"  />
 
 </beans>  

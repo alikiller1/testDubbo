@@ -7,6 +7,12 @@ import java.util.List;
 public class DemoServiceImpl implements DemoService{  
       
      public String sayHello(String name) {  
+    	 	try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
             return "Hello " + name;  
      }  
      public List<User> getUsers() {  

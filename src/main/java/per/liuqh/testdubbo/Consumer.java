@@ -11,6 +11,7 @@ public class Consumer {
                 new String[] { "dubbo-consumer.xml" });  
         context.start();  
         System.out.println("消费都启动了");
+        try{
         DemoService demoService = (DemoService) context.getBean("demoService"); //  
         String hello = demoService.sayHello("tom"); // ִ  
         System.out.println(hello); //   
@@ -22,7 +23,11 @@ public class Consumer {
                 System.out.println(list.get(i));  
             }  
         }  
-        // System.out.println(demoService.hehe());  
+        }catch(Exception e){
+        	System.out.println("--------------------------------adfsf");
+        	e.printStackTrace();
+        }
+        System.out.println("==============");  
         System.in.read();  
     }  
   
