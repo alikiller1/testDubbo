@@ -1,6 +1,7 @@
 package per.liuqh.testdubbo;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;  
   
   
@@ -8,7 +9,9 @@ public class DemoServiceImpl implements DemoService{
       
      public String sayHello(String name) {  
     	 	try {
+    	 		System.out.println("start------------->"+new Date());
 				Thread.sleep(5000);
+				System.out.println("end------------->"+new Date());
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
