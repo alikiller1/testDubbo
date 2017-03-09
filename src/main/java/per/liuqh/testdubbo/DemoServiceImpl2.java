@@ -6,19 +6,19 @@ import java.util.List;
 
 import com.alibaba.dubbo.config.annotation.Service;  
   
- @Service(timeout=200000,actives=1)
-public class DemoServiceImpl implements DemoService{  
+ @Service(version="1.0.1",timeout=200000,actives=1)
+public class DemoServiceImpl2 implements DemoService{  
       
      public String sayHello(String name) {  
     	 	try {
-    	 		System.out.println("start------------->"+new Date());
+    	 		System.out.println("start======>"+new Date());
 				Thread.sleep(5000);
-				System.out.println("end------------->"+new Date());
+				System.out.println("end======>"+new Date());
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-            return "Hello " + name;  
+            return "Hello-----------> " + name;  
      }  
      public List<User> getUsers() {  
          List<User> list = new ArrayList<User>();  
